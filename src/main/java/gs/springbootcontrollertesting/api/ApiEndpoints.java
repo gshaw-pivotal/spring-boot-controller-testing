@@ -25,7 +25,7 @@ public class ApiEndpoints {
     public ResponseEntity create(@RequestBody ThingRequest thing) {
         int thingId = thingService.create(thing);
 
-        return ResponseEntity.status(HttpStatus.CREATED).body(String.format("{ \"id\": %d}", thingId));
+        return ResponseEntity.status(HttpStatus.CREATED).body(String.format("{\"id\": %d}", thingId));
     }
 
     @GetMapping(
