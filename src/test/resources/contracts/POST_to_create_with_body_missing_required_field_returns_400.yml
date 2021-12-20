@@ -1,0 +1,12 @@
+description: POST request to /thing/create with body missing required field returns 400
+name: POST request to create with body missing required field returns 400
+request:
+  method: POST
+  url: /thing/create
+  headers:
+    Content-Type: application/json
+  body:
+    description: "thing-description"
+    notes: "thing-notes"
+response:
+  status: 400

@@ -1,0 +1,9 @@
+description: POST request to /thing/create with empty body returns 400
+name: POST request to create with empty body returns 400
+request:
+  method: POST
+  url: /thing/create
+  headers:
+    Content-Type: application/json
+response:
+  status: 400

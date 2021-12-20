@@ -1,0 +1,9 @@
+description: DELETE request to /thing/{id} returns 204
+name: DELETE request to thing id with an id returns 204
+request:
+  method: DELETE
+  url: /thing/1
+  headers:
+    Content-Type: application/json
+response:
+  status: 204
