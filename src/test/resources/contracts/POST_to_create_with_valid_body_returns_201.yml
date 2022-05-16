@@ -1,0 +1,19 @@
+description: POST request to /thing/create with valid body returns 201
+name: POST request to create with valid body returns 201
+request:
+  method: POST
+  url: /thing/create
+  headers:
+    Content-Type: application/json
+  body:
+    name: "thing-name"
+    description: "thing-description"
+    notes: "thing-notes"
+response:
+  status: 201
+  body:
+    id: 1
+  matchers:
+    body:
+      - path: id
+        type: by_type
